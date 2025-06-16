@@ -127,7 +127,7 @@
 
     #gameBoard {
       display: grid;
-      gap: 2px;
+      gap: 1px;
       justify-content: center;
       margin-bottom: 30px;
       user-select: none;
@@ -416,6 +416,7 @@
       size=config.size;
       mineCount=config.mines;
       timerLimit=config.timer;
+      document.getElementById("footerText").style.display = "none";
       const defaultSize=config.cellSize;
 
       const totalWidth = window.innerWidth * 0.9;
